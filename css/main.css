@@ -1,0 +1,51 @@
+.scrollsnap {
+    height: 100vh;
+}
+
+.air {
+    background: white url(../images/airbackground.png) no-repeat center;
+
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+#airscene {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.air img {
+    width: 50%;
+}
+
+.cloud-right-top {
+    top: 30% !important;
+    left: 50% !important;
+}
+
+.cloud-right-bottom {
+    top: 60% !important;
+    left: 50% !important;
+}
+
+.cloud-left-bottom {}
+
+.cloud-left-top {}
+
+.birds1 {}
+
+.birds2 {}
+
+.birds3 {}
+
+/* Scroll Snap Styles */
+main {
+    max-height: 100vh;
+    overflow-y: scroll;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+}
