@@ -2,12 +2,73 @@
     height: 100vh;
 }
 
+:root {
+    --font-heading: 'Ultra', serif;
+    --font-content: 'Genos', sans-serif;
+    --rose: #AB5C64;
+    --line-height: 1em;
+}
+
+/* Navigation Bar Styles */
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar-brand img {
+    max-height: 70px;
+}
+
+
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-size: 2.5em;
+}
+
+p {
+    font-family: var(--font-content);
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: var(--line-height);
+}
+
+/* ***************** MOBILE FIRST STYLES ************************* */
+/* ***************** SMALL DEVICES <550px ************************ */
+
+/* 1. Air section */
+
 .air {
     background: white url(../images/airbackground.png) no-repeat center;
 
     background-size: cover;
     position: relative;
     overflow: hidden;
+}
+
+.logo-big {
+    max-width: 250px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2em;
+
+}
+
+h1 {
+    font-size: 0.9em;
+    font-family: var(--font-content);
+}
+
+
+.air h2,
+p {
+    text-align: center;
+    z-index: 100;
+    color: var(--rose);
+
+}
+
+.air h2 {
+    padding-top: 5em;
 }
 
 #airscene {
@@ -23,24 +84,45 @@
 }
 
 .cloud-right-top {
-    top: 30% !important;
+    top: 60% !important;
     left: 50% !important;
+    width: 90%;
 }
 
 .cloud-right-bottom {
-    top: 60% !important;
-    left: 50% !important;
+    top: 85% !important;
+    left: 60% !important;
+    width: 80%;
 }
 
-.cloud-left-bottom {}
+.cloud-left-bottom {
+    top: 80% !important;
+    left: 5% !important;
+}
 
-.cloud-left-top {}
+.cloud-left-top {
+    top: 52% !important;
+    left: 5% !important;
+}
 
-.birds1 {}
+.birds1 {
+    top: 20% !important;
+    left: 20% !important;
+    width: 130%;
+}
 
-.birds2 {}
+.birds2 {
+    top: 30% !important;
+    left: 20% !important;
+    width: 100%;
+}
 
-.birds3 {}
+.birds3 {
+    top: 15% !important;
+    left: 40% !important;
+    width: 100%;
+}
+
 
 /* Scroll Snap Styles */
 main {
