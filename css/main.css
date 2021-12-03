@@ -152,22 +152,46 @@ h1 {
 }
 
 .water img {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .turtle {
-    top: 10% !important;
-    left: 5% !important;
+    display: inline-block !important;
+    width: 50%;
+    top: 5% !important;
+    left: 3% !important;
     /* width: 90%; */
+}
+
+.turtle>img {
+    width: 100%;
 }
 
 .coral {
-
-    right: 10% !important;
-    /* width: 90%; */
+    display: inline-block !important;
+    width: 50%;
     top: 60% !important;
-    /* left: % !important; */
+    left: 60% !important;
 }
+
+.coral>img {
+    width: 100%;
+}
+
+/* 3. Earth Section */
+
+.earth {
+    background: white url(../images/earthbackground.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.paragraph5 {
+    padding-top: 20em;
+}
+
+
 
 /* Scroll Snap Styles */
 main {
