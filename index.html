@@ -19,7 +19,7 @@
         rel="stylesheet">
     <title>Lufe</title>
     <script src="js/panelsnap.js" defer></script>
-    <script>
+    <!-- <script>
         // Panel Snap
         document.addEventListener("DOMContentLoaded", function () {
             var defaultOptions = {
@@ -29,12 +29,12 @@
 
             new PanelSnap(defaultOptions);
         });
-    </script>
+    </script> -->
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
             <div class="container-xl">
                 <a class="navbar-brand" href="#"><img src="images/logosmall.png" alt="lufelogo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -97,41 +97,58 @@
                     <img src="images/birds3-8.png" alt="birds3">
                 </div>
             </div>
+            <div class="paragraph1">
+                <h2>I am Luisa (Fernanda)
+                    Forero
+                </h2>
+                <p>and my friends call me LuFe.
+                </p>
+                <p>
+                    I am a student of the Interactive Media Design program at Algonquin College and an industrial
+                    engineer
+                    with experience in project management currently based in Ottawa, Canada.
 
-            <h2>I am Luisa (Fernanda)
-                Forero
-            </h2>
-            <p>and my friends call me LuFe.
-
-            </p>
-            <p>
-                I am a student of the Interactive Media Design program at Algonquin College and an industrial engineer
-                with experience in project management currently based in Ottawa, Canada.
-
-            </p>
-            <h2>
-                I aspire to
-            </h2>
-            <p>
-                learn and gain experience in the graphic design and web developing industry. I am willing to help
-                agencies and businesses in general turn their projects into designs.
-            </p>
-            <p>
-                I am curious, full of ideas and always love to see dreams come true.
-            </p>
+                </p>
+            </div>
+            <div class="paragraph2">
+                <h2>
+                    I aspire to
+                </h2>
+                <p>
+                    learn and gain experience in the graphic design and web developing industry. I am willing to help
+                    agencies and businesses in general turn their projects into designs.
+                </p>
+                <p>
+                    I am curious, full of ideas and always love to see dreams come true.
+                </p>
+            </div>
         </section>
         <!-- ***** Water Section ***** -->
         <section class="water scrollsnap">
-            <h2>I can help you to</h2>
-            <p>
-                solve problems through design from building your brand identity from scratch, to code and develop your
-                custom responsive website by using creative thinking techniques, best practices and tools.
-            </p>
-            <p>
-                I like listening and understanding my clients’ requirements carefully as I am convinced any interactive
-                media project will succeed from there. In addition, I am flexible and adaptable with the ability to
-                change and meet your demands.
-            </p>
+            <div id="waterscene">
+                <div class="turtle" data-depth="0.4">
+                    <img src="images/turtle.png" alt="turtleillustration">
+                </div>
+                <div class="coral" data-depth="0.5">
+                    <img src="images/coral.png" alt="coralillustration2">
+                </div>
+            </div>
+            <div class="paragraph3">
+                <h2>I can help you to</h2>
+                <p>
+                    solve problems through design from building your brand identity from scratch, to code and develop
+                    your
+                    custom responsive website by using creative thinking techniques, best practices and tools.
+                </p>
+            </div>
+            <div class="paragraph4">
+                <p>
+                    I like listening and understanding my clients’ requirements carefully as I am convinced any
+                    interactive
+                    media project will succeed from there. In addition, I am flexible and adaptable with the ability to
+                    change and meet your demands.
+                </p>
+            </div>
         </section>
         <!-- ***** Earth Section ***** -->
         <section class="earth scrollsnap">
@@ -214,6 +231,10 @@
     <script>
         var airscene = document.getElementById('airscene');
         var parallaxInstance = new Parallax(airscene);
+    </script>
+    <script>
+        var waterscene = document.getElementById('waterscene');
+        var parallaxInstance = new Parallax(waterscene);
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

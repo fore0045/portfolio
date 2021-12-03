@@ -18,16 +18,17 @@
     max-height: 70px;
 }
 
+main {}
 
 h2,
 h3 {
     font-family: var(--font-heading);
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 p {
     font-family: var(--font-content);
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 400;
     line-height: var(--line-height);
 }
@@ -46,11 +47,13 @@ p {
 }
 
 .logo-big {
-    max-width: 250px;
     text-align: center;
-    justify-content: center;
     padding-top: 2em;
 
+}
+
+.logo-big>img {
+    max-width: 120px;
 }
 
 h1 {
@@ -58,17 +61,21 @@ h1 {
     font-family: var(--font-content);
 }
 
-
-.air h2,
-p {
+.paragraph1 {
+    padding-top: 11em;
+    padding-left: 1em;
+    padding-right: 1em;
     text-align: center;
-    z-index: 100;
     color: var(--rose);
-
+    opacity: 0.9;
 }
 
-.air h2 {
-    padding-top: 5em;
+.paragraph2 {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    color: var(--rose);
+    opacity: 0.9;
 }
 
 #airscene {
@@ -123,11 +130,54 @@ p {
     width: 100%;
 }
 
+/* 2. Water Section */
+
+.water {
+    background: white url(../images/waterbackground.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.paragraph3 {
+    padding-top: 30em;
+}
+
+#waterscene {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.water img {
+    width: 50%;
+}
+
+.turtle {
+    top: 10% !important;
+    left: 5% !important;
+    /* width: 90%; */
+}
+
+.coral {
+
+    right: 10% !important;
+    /* width: 90%; */
+    top: 60% !important;
+    /* left: % !important; */
+}
 
 /* Scroll Snap Styles */
 main {
-    max-height: 100vh;
-    overflow-y: scroll;
+    max-height: 89vh;
+    /* overflow-y: scroll;
     -ms-scroll-snap-type: y mandatory;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; */
+    margin-top: 11vh;
+}
+
+footer {
+    display: none;
 }
