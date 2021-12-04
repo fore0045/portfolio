@@ -153,11 +153,8 @@
         <!-- ***** Earth Section ***** -->
         <section class="earth scrollsnap">
             <div id="earthscene">
-                <div class="turtle" data-depth="0.4">
-                    <img src="images/turtle.png" alt="turtleillustration">
-                </div>
-                <div class="coral" data-depth="0.5">
-                    <img src="images/coral.png" alt="coralillustration2">
+                <div class="plants" data-depth="0.7">
+                    <img src="images/plants.png" alt="plantsillustration">
                 </div>
             </div>
             <div class="paragraph5">
@@ -247,6 +244,10 @@
     <script>
         var waterscene = document.getElementById('waterscene');
         var parallaxInstance = new Parallax(waterscene);
+    </script>
+    <script>
+        var earthscene = document.getElementById('earthscene');
+        var parallaxInstance = new Parallax(earthscene);
     </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

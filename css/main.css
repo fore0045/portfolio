@@ -141,6 +141,11 @@ h1 {
 
 .paragraph3 {
     padding-top: 30em;
+    opacity: 0.9;
+}
+
+.paragraph4 {
+    opacity: 0.9;
 }
 
 #waterscene {
@@ -191,6 +196,24 @@ h1 {
     padding-top: 20em;
 }
 
+#earthscene {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.plants>img {
+    width: 70%;
+}
+
+.plants {
+    top: 65% !important;
+    left: 10% !important;
+}
 
 
 /* Scroll Snap Styles */
