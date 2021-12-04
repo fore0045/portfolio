@@ -215,6 +215,15 @@ h1 {
     left: 10% !important;
 }
 
+/* 4. Fire Section */
+
+.fire {
+    background-color: var(--rose);
+}
+
+/* 5. Work Section */
+
+
 
 /* Scroll Snap Styles */
 main {
