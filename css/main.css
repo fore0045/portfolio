@@ -7,6 +7,11 @@
     --font-content: 'Genos', sans-serif;
     --rose: #AB5C64;
     --line-height: 1em;
+    --blue: #2C3861;
+    --brown: #C44801;
+    --red: #A60C0C;
+    --light-rose: #EEDBDD;
+    --p
 }
 
 /* Navigation Bar Styles */
@@ -24,11 +29,12 @@ h2,
 h3 {
     font-family: var(--font-heading);
     font-size: 1.5em;
+    padding-bottom: 1em;
 }
 
 p {
     font-family: var(--font-content);
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 400;
     line-height: var(--line-height);
 }
@@ -62,8 +68,12 @@ h1 {
     color: grey;
 }
 
+.air h2 {
+    padding-bottom: 0;
+}
+
 .paragraph1 {
-    padding-top: 13em;
+    padding-top: 11em;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
@@ -115,19 +125,19 @@ h1 {
 }
 
 .birds1 {
-    top: 20% !important;
+    top: 25% !important;
     left: 20% !important;
     width: 130%;
 }
 
 .birds2 {
-    top: 30% !important;
+    top: 35% !important;
     left: 20% !important;
     width: 100%;
 }
 
 .birds3 {
-    top: 15% !important;
+    top: 20% !important;
     left: 40% !important;
     width: 100%;
 }
@@ -142,18 +152,21 @@ h1 {
 }
 
 .paragraph3 {
-    padding-top: 30em;
+    padding-top: 25em;
     opacity: 0.9;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
+    color: var(--blue);
 }
 
 .paragraph4 {
     opacity: 0.9;
+    padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
+    color: var(--blue);
 }
 
 #waterscene {
@@ -170,8 +183,8 @@ h1 {
 
 .turtle {
     display: inline-block !important;
-    width: 50%;
-    top: 10% !important;
+    width: 60%;
+    top: 15% !important;
     left: 3% !important;
     /* width: 90%; */
 }
@@ -201,18 +214,25 @@ h1 {
 }
 
 .paragraph5 {
-    padding-top: 20em;
+    padding-top: 10em;
     opacity: 0.9;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
+    color: var(--brown);
+}
+
+.paragraph5 :last-child {
+    padding-top: 2em;
 }
 
 .paragraph6 {
     opacity: 0.9;
+    padding-top: 2em;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
+    color: var(--brown);
 }
 
 #earthscene {
@@ -249,12 +269,15 @@ h1 {
     width: 100%;
 }
 
+/* 
 .fire img {
-    width: 50%;
-}
+    width: 60%;
+
+} */
 
 
-.hand {
+.hand img {
+    width: 60%;
     top: 80% !important;
     left: 60% !important;
 }
@@ -284,11 +307,29 @@ h1 {
     padding-right: 1em;
     padding-left: 1em;
     text-align: center;
+    color: var(--red);
+}
+
+.paragraph7 {
+    padding-top: 10em;
 }
 
 
 
 /* 5. Work Section */
+
+.work {
+    background-color: var(--light-rose);
+}
+
+.paragraph10 {
+    padding-top: 6em;
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    color: var(--rose);
+}
 
 /* Styles to each photo card*/
 
@@ -307,14 +348,10 @@ h1 {
 }
 
 .info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: "Bree Serif", serif;
+    background: rgba(27, 26, 26, 0.7);
     transition: all 0.3s ease-out;
-
     position: absolute;
     line-height: 1.8;
-    text-align: left;
-    font-size: 105%;
     cursor: no-drop;
     color: #fff;
     height: 100%;
@@ -325,6 +362,9 @@ h1 {
 
 .info h2 {
     text-align: center;
+    padding-top: 45%;
+    color: var(--light-rose);
+    font-size: 1.4em;
 }
 
 .product-image:hover .info {
@@ -351,6 +391,12 @@ h1 {
     transform: translateY(-100%);
 }
 
+/* 6. Contact Section */
+
+.contact {
+    background-color: #FBF6F6;
+
+}
 
 /* Scroll Snap Styles */
 main {
