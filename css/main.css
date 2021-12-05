@@ -59,6 +59,7 @@ p {
 h1 {
     font-size: 0.8em;
     font-family: var(--font-content);
+    color: grey;
 }
 
 .paragraph1 {
@@ -143,10 +144,16 @@ h1 {
 .paragraph3 {
     padding-top: 30em;
     opacity: 0.9;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
 }
 
 .paragraph4 {
     opacity: 0.9;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
 }
 
 #waterscene {
@@ -195,6 +202,17 @@ h1 {
 
 .paragraph5 {
     padding-top: 20em;
+    opacity: 0.9;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+.paragraph6 {
+    opacity: 0.9;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
 }
 
 #earthscene {
@@ -204,8 +222,6 @@ h1 {
     height: 100%;
     width: 100%;
 }
-
-
 
 .plants>img {
     width: 70%;
@@ -219,8 +235,58 @@ h1 {
 /* 4. Fire Section */
 
 .fire {
-    background-color: var(--rose);
+    background: white url(../images/firebackground.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
+
+#firescene {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fire img {
+    width: 50%;
+}
+
+
+.hand {
+    top: 80% !important;
+    left: 60% !important;
+}
+
+.flame1 {
+    width: 30%;
+    top: 20% !important;
+    left: 60% !important;
+}
+
+.flame2 {
+    top: 50% !important;
+    left: 60% !important;
+    width: 30%;
+}
+
+.flame3 {
+    top: 40% !important;
+    left: 60% !important;
+    width: 30%;
+}
+
+.paragraph7,
+.paragraph8,
+.paragraph9 {
+    opacity: 0.9;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+}
+
+
 
 /* 5. Work Section */
 
