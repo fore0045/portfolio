@@ -5,13 +5,15 @@
 :root {
     --font-heading: 'Ultra', serif;
     --font-content: 'Genos', sans-serif;
+    --font-quote: 'Playfair Display', serif;
     --rose: #AB5C64;
     --line-height: 1em;
     --blue: #2C3861;
     --brown: #C44801;
     --red: #A60C0C;
     --light-rose: #EEDBDD;
-    --p
+    --pink: #E37B83;
+    --border-color: #E37B83;
 }
 
 /* Navigation Bar Styles */
@@ -353,7 +355,6 @@ h1 {
     position: absolute;
     line-height: 1.8;
     cursor: no-drop;
-    color: #fff;
     height: 100%;
     width: 100%;
     left: 0;
@@ -364,7 +365,7 @@ h1 {
     text-align: center;
     padding-top: 45%;
     color: var(--light-rose);
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 .product-image:hover .info {
@@ -395,7 +396,60 @@ h1 {
 
 .contact {
     background-color: #FBF6F6;
+}
 
+.contact h2 {
+    color: var(--pink);
+    text-align: center;
+    padding-top: 6em;
+}
+
+.contact p {
+    color: var(--pink);
+    text-align: center;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.form-floating {
+    font-family: var(--font-content);
+    color: grey;
+    padding: 0.5em;
+}
+
+.form-control {
+    border: 1px solid var(--pink);
+    /* transition: var(--border-color) .15s ease-in-out,
+        box-shadow .15s ease-in-out; */
+}
+
+.contact button {
+    background-color: var(--pink);
+    padding: 0.5em 2em;
+    border-radius: 0.2rem;
+    color: white;
+    font-family: var(--font-content);
+    font-size: 1.2em;
+    border: none;
+    margin-left: 0.5em;
+    margin-top: 1em;
+}
+
+/* .formfloating label {
+    padding-left: 1em;
+} */
+
+.quote p {
+    font-family: var(--font-quote);
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+
+.quote p:last-child {
+    font-family: var(--font-content);
+    font-size: 1em;
+    padding-top: 0;
 }
 
 /* Scroll Snap Styles */
