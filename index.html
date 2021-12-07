@@ -133,21 +133,27 @@
                     <img src="images/coral.png" alt="coralillustration2">
                 </div>
             </div>
-            <div class="paragraph3">
-                <h2>I can help you to</h2>
-                <p>
-                    solve problems through design from building your brand identity from scratch, to code and develop
-                    your
-                    custom responsive website by using creative thinking techniques, best practices and tools.
-                </p>
-            </div>
-            <div class="paragraph4">
-                <p>
-                    I like listening and understanding my clients’ requirements carefully as I am convinced any
-                    interactive media project will succeed from there. In addition, I am flexible and adaptable with the
-                    ability to
-                    change and meet your demands.
-                </p>
+            <div class="container-xl">
+                <div class="row">
+                    <div class="paragraph3 col-lg-6 offset-lg-6">
+                        <h2>I can help you to</h2>
+                        <p>
+                            solve problems through design from building your brand identity from scratch, to code and
+                            develop
+                            your
+                            custom responsive website by using creative thinking techniques, best practices and tools.
+                        </p>
+                    </div>
+                    <div class="paragraph4 col-lg-6">
+                        <p>
+                            I like listening and understanding my clients’ requirements carefully as I am convinced any
+                            interactive media project will succeed from there. In addition, I am flexible and adaptable
+                            with the
+                            ability to
+                            change and meet your demands.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ***** Earth Section ***** -->
@@ -185,7 +191,7 @@
                     <img src="images/flame3.png" alt="flame3illustration">
                 </div> -->
                 <div class="hand" data-depth="0.4">
-                    <img src="images/handsvg.svg" alt="handillustration">
+                    <img src="images/handsvg.svg" alt="handillustration" class="vh-100">
                 </div>
             </div>
             <div class="paragraph7">
@@ -229,7 +235,6 @@
                         </div>
                         <img src="./images/lufe-top-left.png" alt="lufe-top-left">
                         <!-- Scrollable modal -->
-
                         <div class="modal fade" id="omnipaymentsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
@@ -347,6 +352,7 @@
             <p>&copy; Copyright, Lufe 2021</p>
         </div>
     </footer>
+    <span id="circle" class="circle"></span>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -370,7 +376,31 @@
         var firescene = document.getElementById('firescene');
         var parallaxInstance = new Parallax(firescene);
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
 
+            var mouseX = 0,
+                mouseY = 0;
+            var xp = 0,
+                yp = 0;
+
+            $(document).mousemove(function (e) {
+                mouseX = e.pageX - 30;
+                mouseY = e.pageY - 30;
+            });
+
+            setInterval(function () {
+                xp += ((mouseX - xp) / 6);
+                yp += ((mouseY - yp) / 6);
+                $("#circle").css({
+                    left: xp + 'px',
+                    top: yp + 'px'
+                });
+            }, 20);
+
+        });
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
