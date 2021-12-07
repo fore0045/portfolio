@@ -1,5 +1,10 @@
 .scrollsnap {
+    scroll-margin: 90px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     height: 100vh;
+    scroll-snap-type: y mandatory;
+
 }
 
 :root {
@@ -42,7 +47,7 @@ p {
 }
 
 /* ***************** MOBILE FIRST STYLES ************************* */
-/* ***************** SMALL DEVICES <550px ************************ */
+/* ***************** X-SMALL DEVICES <550px ************************ */
 
 /* 1. Air section */
 
@@ -75,7 +80,7 @@ h1 {
 }
 
 .paragraph1 {
-    padding-top: 11em;
+    padding-top: 7em;
     padding-left: 1em;
     padding-right: 1em;
     text-align: center;
@@ -395,7 +400,7 @@ h1 {
 .contact h2 {
     color: var(--pink);
     text-align: center;
-    padding-top: 6em;
+    padding-top: 2em;
 }
 
 .contact p {
@@ -403,7 +408,7 @@ h1 {
     text-align: center;
     padding-right: 1em;
     padding-left: 1em;
-    padding-bottom: 1em;
+    padding-bottom: .8em;
 }
 
 .form-floating {
@@ -453,6 +458,12 @@ input[type="tel"]:focus {
     padding-top: 0;
 }
 
+/* 7. Footer */
+
+footer {
+    display: none;
+}
+
 /* Scroll Snap Styles */
 main {
     max-height: 89vh;
@@ -462,6 +473,10 @@ main {
     margin-top: 11vh;
 }
 
-footer {
-    display: none;
-}
+/* ***************** SMALL DEVICES >550px TO <768 ************************ */
+
+@media screen and (min-width:768px) {}
+
+/* ***************** LARGE DEVICES >992px ************************ */
+
+@media screen and (min-width:992px) {}

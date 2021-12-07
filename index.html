@@ -144,8 +144,8 @@
             <div class="paragraph4">
                 <p>
                     I like listening and understanding my clients’ requirements carefully as I am convinced any
-                    interactive
-                    media project will succeed from there. In addition, I am flexible and adaptable with the ability to
+                    interactive media project will succeed from there. In addition, I am flexible and adaptable with the
+                    ability to
                     change and meet your demands.
                 </p>
             </div>
@@ -223,11 +223,68 @@
             <div class="myprojects">
                 <div class="d-flex justify-content-center">
                     <div class="product-image">
-                        <div class="info infotop">
+                        <div class="info infotop" data-bs-toggle="modal" data-bs-target="#omnipaymentsModal">
                             <h2> OmniPayments</h2>
+
                         </div>
                         <img src="./images/lufe-top-left.png" alt="lufe-top-left">
+                        <!-- Scrollable modal -->
+
+                        <div class="modal fade" id="omnipaymentsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="carouselExampleIndicators" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="0" class="active" aria-current="true"
+                                                    aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="images/earthbackground.png" class="d-block w-100"
+                                                        alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="..." class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="..." class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="product-image">
                         <div class="info infotop">
                             <h2>Bubbly</h2>
@@ -313,6 +370,7 @@
         var firescene = document.getElementById('firescene');
         var parallaxInstance = new Parallax(firescene);
     </script>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
