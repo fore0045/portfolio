@@ -10,6 +10,7 @@
     --light-rose: #EEDBDD;
     --pink: #E37B83;
     --border-color: #E37B83;
+    --grey: #58595B;
 }
 
 /* Navigation Bar Styles */
@@ -376,6 +377,31 @@ h1 {
 
 .infobottom {
     transform: translateY(-100%);
+}
+
+/* Carousel Styles */
+
+.carousel-item img {
+    border-radius: 20px;
+    border: none;
+    margin-top: 2em;
+}
+
+.modal-title {
+    font-family: var(--font-heading);
+    font-size: 2em;
+    color: var(--grey)
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin: 1em;
+}
+
+.modal-body p {
+    text-align: center;
+    margin-top: 2em;
+    color: var(--grey);
 }
 
 /* 6. Contact Section */
