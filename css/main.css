@@ -25,6 +25,7 @@
 main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    cursor: default;
 }
 
 .scrollsnap {
@@ -341,7 +342,7 @@ h1 {
     transition: all 0.3s ease-out;
     position: absolute;
     line-height: 1.8;
-    cursor: no-drop;
+    cursor: pointer;
     height: 100%;
     width: 100%;
     left: 0;
@@ -395,13 +396,23 @@ h1 {
 
 .carousel-control-prev,
 .carousel-control-next {
-    margin: 1em;
+    margin: -1em;
 }
 
 .modal-body p {
     text-align: center;
     margin-top: 2em;
     color: var(--grey);
+}
+
+#carouselExampleIndicators {
+    width: 55%;
+    margin: auto;
+}
+
+#carouselExampleIndicators1 {
+    width: 55%;
+    margin: auto;
 }
 
 /* 6. Contact Section */
