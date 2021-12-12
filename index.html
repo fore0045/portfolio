@@ -35,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                            <a class="nav-link active" aria-current="page" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link" href="#work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resume</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="/files/LuisaForeroResume.pdf" download="">Resume</a>
                         </li>
                     </ul>
                     </li>
@@ -55,19 +55,16 @@
     </header>
     <main>
         <!-- ***** Air Section ***** -->
-        <section class="air scrollsnap">
+        <section class="air scrollsnap" id="about">
             <div class="logo-big">
                 <img src="images/logobig.svg" alt="lufelogobig">
                 <h1>Smart-looking content</h1>
             </div>
             <div id="airscene">
-                <!-- <div class="airbackground" data-depth="0.1">
-                    <img src="images/airbackground.png" alt="">
-                </div> -->
                 <div class="cloud-right-top" data-depth="0.4">
                     <img src="images/cloud-right-8.png" alt="cloudillustration1">
                 </div>
-                <div class="cloud-right-bottom" data-depth="0.2">
+                <div class="cloud-right-bottom" data-depth="0.7">
                     <img src="images/cloud-right-bottom-8.png" alt="cloudillustration2">
 
                 </div>
@@ -87,30 +84,31 @@
                     <img src="images/birds3-8.png" alt="birds3">
                 </div>
             </div>
-            <div class="paragraph1">
-                <h2>I am Luisa (Fernanda)
-                    Forero
-                </h2>
-                <p>and my friends call me LuFe.
-                </p>
-                <p>
-                    I am a student of the Interactive Media Design program at Algonquin College and an industrial
-                    engineer
-                    with experience in project management currently based in Ottawa, Canada.
+            <div class="container-xl">
+                <div class="paragraph1">
+                    <h2>I am Luisa (Fernanda)
+                        Forero
+                    </h2>
+                    <p>and my friends call me LuFe.
+                    </p>
+                    <p>
+                        I am a student of the Interactive Media Design program at Algonquin College and an industrial
+                        engineer
+                        with experience in project management currently based in Ottawa, Canada.
 
-                </p>
-            </div>
-            <div class="paragraph2">
-                <h2>
-                    I aspire to
-                </h2>
-                <p>
-                    learn and gain experience in the graphic design and web developing industry. I am willing to help
-                    agencies and businesses in general turn their projects into designs.
-                </p>
-                <p>
-                    I am curious, full of ideas and always love to see dreams come true.
-                </p>
+                    </p>
+                </div>
+                <div class="paragraph2">
+                    <h2>
+                        I aspire to
+                    </h2>
+                    <p>
+                        learn and gain experience in the graphic design and web developing industry. I am willing to
+                        help
+                        agencies and businesses in general turn their projects into designs. I am curious, full of ideas
+                        and always love to see dreams come true.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- ***** Water Section ***** -->
@@ -155,16 +153,19 @@
                     <img src="images/plants.png" alt="plantsillustration">
                 </div>
             </div>
-            <div class="paragraph5">
-                <h2>My background </h2>
-                <p>I graduated with a bachelor’s degree in Industrial Engineering and obtained a postgraduate degree in
-                    Project Management from the Universidad del Rosario in Colombia. </p>
-                <p>I worked for more than 15 years in the banking, construction and technology sectors, taking part in
-                    multiple projects.</p>
-            </div>
-            <div class="paragraph6">
-                <p>This allowed me to develop strong communication skills with all the participants, provide exceptional
-                    customer service, and work as a team.</p>
+            <div class="container-xl">
+                <div class="paragraph5">
+                    <h2>My background </h2>
+                    <p>I graduated with a bachelor’s degree in Industrial Engineering and obtained a postgraduate degree
+                        in
+                        Project Management from the Universidad del Rosario in Colombia. </p>
+                    <p>I worked for more than 15 years in the banking, construction and technology sectors, taking part
+                        in
+                        multiple projects.</p>
+                    <p>This allowed me to develop strong communication skills with all the participants, provide
+                        exceptional
+                        customer service, and work as a team.</p>
+                </div>
             </div>
         </section>
         <!-- ***** Fire Section ***** -->
@@ -209,7 +210,7 @@
             </div>
         </section>
         <!-- ***** My Work Section ***** -->
-        <section class="work scrollsnap">
+        <section class="work scrollsnap" id="work">
             <div class="paragraph10">
                 <h2>My Work</h2>
                 <p>Here are a few projects and design explorations I have done since I started this wonderful journey.
@@ -379,13 +380,7 @@
                                             </div>
                                         </div>
                                         <div class="container-md">
-                                            <p>Content and brand management of this Payments Solutions company that was
-                                                seeking to promote a more professional and trustable image to its
-                                                customers.
-                                                <br>
-                                                Designed and developed a responsive website based on HTML and CSS.
-                                                <br>
-                                                Iconography design according to the new brand color palette.
+                                            <p>Branding • Design and Coding of Responsive Web Design
                                             </p>
                                         </div>
                                     </div>
@@ -396,16 +391,136 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="product-image">
-                        <div class="info infobottom">
+                        <div class="info infobottom" data-bs-toggle="modal" data-bs-target="#zewaModal">
                             <h2>Zewa</h2>
                         </div>
                         <img src="./images/lufe-bottom-left.png" alt="lufe-bottom-left">
+                        <!-- Scrollable modal -->
+                        <div class="modal fade" id="zewaModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header container-xl">
+                                        <h5 class="modal-title" id="exampleModalLabel">Zewa</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="carouselExampleIndicators2" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner container-md">
+                                                <div class="carousel-item active">
+                                                    <img src="images/zewa1.jpg" class="d-block w-100" alt="zewa home">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/zewa2.jpg" class="d-block w-100"
+                                                        alt="zewa home bottom">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="images/zewa3.jpg" class="d-block w-100"
+                                                        alt="zewa contact">
+                                                </div>
+
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="">
+                                                    <img src="images/zewa1-min.jpg"
+                                                        data-bs-target="#carouselExampleIndicators2"
+                                                        data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"
+                                                        class="rounded w-75 active" alt="zewa home">
+                                                </div>
+                                                <div class="">
+                                                    <img src="images/zewa2-min.jpg"
+                                                        data-bs-target="#carouselExampleIndicators2"
+                                                        data-bs-slide-to="1" aria-label="Slide 2" class="rounded w-75"
+                                                        alt="zewa home bottom">
+                                                </div>
+                                                <div class="">
+                                                    <img src="images/zewa3-min.jpg"
+                                                        data-bs-target="#carouselExampleIndicators2"
+                                                        data-bs-slide-to="2" aria-label="Slide 3" class="rounded w-75"
+                                                        alt="zewa contact">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="container-md">
+                                            <p>Web Design in Wordpress
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="product-image">
-                        <div class="info infobottom">
+                        <div class="info infobottom" data-bs-toggle="modal" data-bs-target="#avatarModal">
                             <h2>Avatar</h2>
                         </div>
                         <img src="./images/lufe-right-bottom.png" alt="lufe-right-top">
+                        <!-- Scrollable modal -->
+                        <div class="modal fade" id="avatarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header container-xl">
+                                        <h5 class="modal-title" id="exampleModalLabel">Avatar</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div id="carouselExampleIndicators3" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner container-md">
+                                                <div class="carousel-item active">
+                                                    <img src="images/avatar1.jpg" class="d-block w-100" alt="avatar">
+                                                </div>
+
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                        <div class="container mt-4">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="">
+                                                    <img src="images/avatar1-min.jpg"
+                                                        data-bs-target="#carouselExampleIndicators3"
+                                                        data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"
+                                                        class="rounded w-75 active" alt="avatar">
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="container-md">
+                                            <p>Animal Avatar • Icon Design for iTunes, iPad and iPhone
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -413,32 +528,34 @@
         </section>
 
         <!-- ***** Contact Section ***** -->
-        <section class="contact scrollsnap p-5">
-            <h2>Let’s Have a Talk</h2>
-            <p>
-                Let’s make great projects together! Please leave a message and I will get back to you shortly.
-            </p>
-            <div class="form-floating my-3">
-                <input type="text" class="form-control" id="floatingInput" placeholder="fullname">
-                <label for="floatingInput">Full Name</label>
-            </div>
-            <div class="form-floating my-3">
-                <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
-                <label for="floatingInput">Email Address</label>
-            </div>
-            <div class="form-floating my-3">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Message</label>
-            </div>
-            <button type="submit">Send</button>
-            <div class="quote">
-                <p>"Talent is good.
-                    <br>
-                    Practice is bettter.
-                    <br>
-                    Passion is best"</p>
-                <p>-Frank Lloyd Wright-</p>
+        <section class="contact scrollsnap p-5" id="contact">
+            <div class="container-xl">
+                <h2>Let’s Have a Talk</h2>
+                <p>
+                    Let’s make great projects together! Please leave a message and I will get back to you shortly.
+                </p>
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="fullname">
+                    <label for="floatingInput">Full Name</label>
+                </div>
+                <div class="form-floating my-3">
+                    <input type="email" class="form-control" id="floatingPassword" placeholder="name@example.com">
+                    <label for="floatingInput">Email Address</label>
+                </div>
+                <div class="form-floating my-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                </div>
+                <button type="submit">Send</button>
+                <div class="quote">
+                    <p>"Talent is good.
+                        <br>
+                        Practice is bettter.
+                        <br>
+                        Passion is best"</p>
+                    <p>-Frank Lloyd Wright-</p>
+                </div>
             </div>
         </section>
 
@@ -448,6 +565,26 @@
         <div class="container-xl">
             <p>&copy; Copyright, Lufe 2021</p>
         </div>
+        <!-- <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24">
+                            <use xlink:href="#bootstrap" /></svg>
+                    </a>
+                    <span class="text-muted">&copy; 2021 Company, Inc</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter" /></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram" /></svg></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook" /></svg></a></li>
+                </ul>
+            </footer>
+        </div> -->
     </footer>
     <span id="circle" class="circle"></span>
     <!-- Optional JavaScript; choose one of the two! -->
