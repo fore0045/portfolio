@@ -45,8 +45,8 @@
 
 
 main {
-    /* scroll-snap-type: y mandatory; */
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y proximity; */
     overflow-y: scroll;
     cursor: default;
 }
@@ -419,7 +419,7 @@ h1 {
 
 .carousel-control-prev,
 .carousel-control-next {
-    margin: -1em;
+    display: none;
 }
 
 .modal-body p {
@@ -429,22 +429,22 @@ h1 {
 }
 
 #carouselExampleIndicators {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
 #carouselExampleIndicators1 {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
 #carouselExampleIndicators2 {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
 #carouselExampleIndicators3 {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
@@ -662,6 +662,31 @@ main {
 
     .paragraph10 {
         padding-top: 3em;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin: -1em;
+    }
+
+    #carouselExampleIndicators {
+        width: 55%;
+        margin: auto;
+    }
+
+    #carouselExampleIndicators1 {
+        width: 55%;
+        margin: auto;
+    }
+
+    #carouselExampleIndicators2 {
+        width: 55%;
+        margin: auto;
+    }
+
+    #carouselExampleIndicators3 {
+        width: 55%;
+        margin: auto;
     }
 }
 
