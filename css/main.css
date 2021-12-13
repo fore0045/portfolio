@@ -82,13 +82,13 @@ p {
     background-size: cover;
     position: relative;
 
-    /* remove if adding more content */
-    overflow: hidden;
+    /* remove if adding more content
+    overflow: hidden; */
 
-    /* use for adding more content
+    /* /* use for adding more content */
     overflow-y: scroll;
     padding-bottom: 12vh;
-    overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .logo-big {
