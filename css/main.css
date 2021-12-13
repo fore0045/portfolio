@@ -541,7 +541,7 @@ main {
 
 /* ***************** SMALL DEVICES >550px TO <768 ************************ */
 
-@media screen and (min-width:550px) {
+@media screen and (min-width: 550px) {
 
     h2,
     h3 {
@@ -632,7 +632,7 @@ main {
 
 /* ***************** MEDIUM DEVICES >768 TO <992px ************************ */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 
     /* 1. Air Section */
 
@@ -693,7 +693,7 @@ main {
 
 /* ***************** LARGE DEVICES >992px TO <1200px ************************ */
 
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
 
     .logo-big>img {
         max-width: 140px;
@@ -782,7 +782,7 @@ main {
 
 /* ***************** EXTRA LARGE DEVICES >1200px ************************ */
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
     .logo-big>img {
         max-width: 160px;
     }
