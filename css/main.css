@@ -54,7 +54,7 @@ main {
 .scrollsnap {
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    height: 100vh;
+    height: 150vh;
 }
 
 h2,
@@ -82,13 +82,13 @@ p {
     background-size: cover;
     position: relative;
 
-    /* remove if adding more content
-    overflow: hidden; */
+    /* remove if adding more content*/
+    overflow: hidden;
 
-    /* /* use for adding more content */
+    /* /* /* use for adding more content 
     overflow-y: scroll;
     padding-bottom: 12vh;
-    overflow-x: hidden;
+    overflow-x: hidden; */
 }
 
 .logo-big {
@@ -308,7 +308,7 @@ h1 {
 .hand {
     top: auto !important;
     left: 0px !important;
-    bottom: -10% !important;
+    bottom: -35% !important;
     opacity: 0.6;
 }
 
@@ -523,7 +523,7 @@ input[type="tel"]:focus {
 
 /* Scroll Snap Styles */
 main {
-    max-height: 89vh;
+    max-height: 110vh;
     margin-top: 11vh;
 }
 
@@ -542,6 +542,15 @@ main {
 /* ***************** SMALL DEVICES >550px TO <768 ************************ */
 
 @media screen and (min-width: 550px) {
+
+    main {
+        max-height: 89vh;
+        margin-top: 11vh;
+    }
+
+    .scrollsnap {
+        height: 100vh;
+    }
 
     h2,
     h3 {
