@@ -1,3 +1,4 @@
+/* Customize varibles definition */
 :root {
     --font-heading: 'Ultra', serif;
     --font-content: 'Genos', sans-serif;
@@ -42,7 +43,7 @@
     border-color: transparent;
 }
 
-
+/* Scrolls snap for about sections */
 
 main {
     scroll-snap-type: y mandatory;
@@ -468,6 +469,8 @@ h1 {
     padding-bottom: .8em;
 }
 
+
+
 .form-floating {
     font-family: var(--font-content);
     color: grey;
@@ -505,7 +508,7 @@ input[type="tel"]:focus {
 
 .quote p {
     font-family: var(--font-quote);
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding-top: 2em;
 }
 
@@ -515,11 +518,20 @@ input[type="tel"]:focus {
     padding-top: 0;
 }
 
-/* 7. Footer */
+footer img {
+    max-width: 30px;
+    margin-left: 1em;
+}
 
-/* footer {
-    display: none;
-} */
+footer p {
+    font-size: 1.2em;
+    color: var(--grey) !important;
+    padding-bottom: 0% !important;
+}
+
+.socialmediaicons {
+    text-align: center;
+}
 
 /* Scroll Snap Styles */
 main {
@@ -631,8 +643,11 @@ main {
     }
 
     .quote p {
+        font-size: 1.3em;
         padding-top: 1em;
     }
+
+
 
     .my-3 {
         margin-bottom: 0rem !important;
@@ -701,6 +716,10 @@ main {
     #carouselExampleIndicators3 {
         width: 55%;
         margin: auto;
+    }
+
+    .quote p {
+        font-size: 1.5em;
     }
 }
 
