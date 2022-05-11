@@ -916,3 +916,14 @@ main {
 
 
 }
+
+/* ***************** EXTRA EXTRA LARGE DEVICES >1800px ************************ */
+
+@media screen and (min-width: 1800px) {
+    .paragraph4 {
+        padding-top: 20em;
+    }
+
+
+
+}
